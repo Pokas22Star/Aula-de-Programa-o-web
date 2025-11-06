@@ -3,43 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário da ONG Universal</title>
+    <title>ONG Universal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4em;
+        }
+
+        nav {
+            background-color: #3e8e41;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1601758261054-152d3c1e9a7c?auto=format&fit=crop&w=1600&q=60');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 1;
+        }
+
+        .hero h2, .hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .botoes {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .botoes a {
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.1em;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .botoes a:hover {
+            background-color: #3e8e41;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 70px 20px;
+            }
+            .hero h2 {
+                font-size: 1.8em;
+            }
+            .botoes a {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Usuário da ONG Universal</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projeto.html">Projeto</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Quem somos nós</h2>
-            <p>Somos uma organização sem fins lucrativos dedicada a ajudar animais abandonados.</p>
-            <img src="imagens/cachorro.jpg" alt="Voluntários em ação">
-        </section>
 
-        <section>
-            <h2>Missao da ONG Universal</h2>
-            <p>Nossa missão é resgatar, cuidar e encontrar lares para animais abandonados, promovendo a conscientização sobre a adoção responsável.</p>
-        </section>
+<header>
+    <h1>ONG Universal</h1>
+    <p>Amor, cuidado e esperança para quem mais precisa 🐶🐱</p>
+</header>
 
-        <section>
-            <h2>Contato com a ONG Universal</h2>
-            <address>
-                <p>Endereço: Rua dos Animais, 122 - Bouganville - João Pinheiro/MG</p>
-                <p>Numero: (38) 99890-0832</p>
-                <p>Email: contato@onguniversal.org.br</p>
-            </address>
-        </section>
-    </main>
+<nav>
+    <a href="index.html">Início</a>
+    <a href="projeto.html">Projetos</a>
+    <a href="cadastro.html">Cadastro</a>
+</nav>
 
-    <footer>
-        <p>&copy; 2025 ONG Universal.</p>
-    </footer>
+<section class="hero">
+    <h2>Juntos, podemos salvar vidas!</h2>
+    <p>Conheça nossos projetos e descubra como você pode fazer parte dessa causa.</p>
+</section>
+
+<div class="container">
+    <h2>Bem-vindo à ONG Universal</h2>
+    <p>Nossa missão é resgatar, cuidar e encontrar lares amorosos para animais abandonados. 
+       Acreditamos que cada vida importa e que pequenas ações podem transformar o mundo.</p>
+
+    <div class="botoes">
+        <a href="projeto.html">🐾 Ver Projetos</a>
+        <a href="cadastro.html">💚 Faça seu Cadastro</a>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 ONG Universal.</p>
+</footer>
+
 </body>
 </html>
